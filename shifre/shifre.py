@@ -34,7 +34,7 @@ def __randomizeStr(wordlist:list) -> str:
 def generatePassword(charCount:int,digitCount:int,symbolCount:int,allowUpper:bool) -> str:
         __catchErrors(charCount,digitCount,symbolCount)
         letterCount = charCount - (digitCount+symbolCount)
-        letters = __generateStr(__upperCaseLetters+__lowerCaseLetters,letterCount)
+        letters = __generateStr(__upperCaseLetters+__lowerCaseLetters,letterCount) if allowUpper else __generateStr(__lowerCaseLetters,letterCount)
         symbols = __generateStr(__symbol_list,symbolCount)
         digits = __generateStr(__digit_list,digitCount)
         password =  __randomizeStr(list(letters+symbols+digits))

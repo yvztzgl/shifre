@@ -1,0 +1,1 @@
+from .shifre import generatePassword
