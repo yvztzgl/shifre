@@ -1,5 +1,5 @@
 # shifre
-Shifre is a Python password generator.
+Shifre is a Python password generator.<br />
 This library creates highly secure password with randomness and pure Python.
 
 You can generate passwords like this:
